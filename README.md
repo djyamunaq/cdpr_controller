@@ -11,6 +11,6 @@
 
 ## Epos node
 1. Subscribe and receive data from topic "motor_pos" with node id and motor position
-2. Set position of motor in <<nodeId>> to position received
+2. Set position of motor in 'nodeId' to position received
 
 
