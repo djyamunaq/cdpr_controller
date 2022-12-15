@@ -39,8 +39,9 @@ void generateTrajectory() {
 class MotorNode : public rclcpp::Node {
   public:
     MotorNode() : Node("robot_motor") {
+      this->pos = 0;
       this->declare_parameter("nodeId", 1);
-      // this->nodeId = this->get_parameter("nodeId").get_parameter_value().get<unsigned int>();
+      this->nodeId = this->get_parameter("nodeId").get_parameter_value().get<unsigned int>();
 
       subscription_ = this->create_subscription<std_msgs::msg::String>(
         "robot_pos", 10, std::bind(&MotorNode::topic_callback, this, _1));
@@ -57,6 +58,8 @@ class MotorNode : public rclcpp::Node {
       
       if((x != xPrev || y != yPrev) && !moving) {
         generateTrajectory();
+        xPrev = x;
+        yPrev = y;
         moving = true;
       }
 
@@ -65,40 +68,69 @@ class MotorNode : public rclcpp::Node {
 
     void timer_callback() {
       if(moving) {
+        cout << "MOVING" << endl;
+
           // Current position
-        Eigen::Vector2d X = trajectory.X(t);
-          // Desired position
-        // Eigen::Vector2d Xd = trajectory.X(t+dt);
+        // Eigen::Vector2d X = trajectory.X(t);
             
-          // Transformation Matrix (EE Local frame to World Frame) node 1
+        //   // Transformation Matrix (EE Local frame to World Frame) node 1
+        // Eigen::Matrix<double, 3, 3> T;
+        // T << cos(ee_theta), -sin(ee_theta), X[0],
+        //      sin(ee_theta), cos(ee_theta), X[1],
+        //      0, 0, 1;
+
+        //   // Calculate positions in world frame 
+        // Eigen::Vector3d X_world = T*ee_pos;
+
+        // double wire_len = (pulley_pos - X_world.block<2, 1>(0, 0)).norm();
+        
+        /* CHANGE START */
+        // Current position
+        Eigen::Vector2d X = trajectory.X(t);
+            // Desired position
+        Eigen::Vector2d Xd = trajectory.X(t+dt);
+            
+            // Transformation Matrix (EE Local frame to World Frame)
         Eigen::Matrix<double, 3, 3> T;
         T << cos(ee_theta), -sin(ee_theta), X[0],
              sin(ee_theta), cos(ee_theta), X[1],
              0, 0, 1;
-        // Eigen::Matrix<double, 3, 3> Td;
-        // Td << cos(ee_theta), -sin(ee_theta), Xd[0],
-        //      sin(ee_theta), cos(ee_theta), Xd[1],
-        //      0, 0, 1;
+        Eigen::Matrix<double, 3, 3> Td;
+        Td << cos(ee_theta), -sin(ee_theta), Xd[0],
+             sin(ee_theta), cos(ee_theta), Xd[1],
+             0, 0, 1;
 
             // Calculate positions in world frame 
         Eigen::Vector3d X_world = T*ee_pos;
-        // Eigen::Vector3d Xd_world = Td*ee_pos;
+        Eigen::Vector3d Xd_world = Td*ee_pos;
 
         double wire_len = (pulley_pos - X_world.block<2, 1>(0, 0)).norm();
-        // double wire_len_d = (pulley_pos - Xd_world.block<2, 1>(0, 0)).norm();
+        double wire_len_d = (pulley_pos - Xd_world.block<2, 1>(0, 0)).norm();
 
             // Calculate variation in wire length
-        // double Dwire_len = wire_len_d - wire_len;
+        double Dwire_len = wire_len_d - wire_len;
 
             // Calculate motor angular variation
-        // double Dth = Dwire_len/((double) 2*M_PI*motor_radius);
+        double Dth = Dwire_len/(2*M_PI*motor_radius);
+
+            // Get current pos
+        this->pos = this->pos + 18;
+        /* CHANGE END*/
+
+          // Calculate motor position
+          // TODO: Ask Ludo about model
+        // double q = 0;
 
         /* Wire in range [0, 200] */
-        this->pos = 1000*wire_len;
+        // this->pos = 1000*wire_len;
         cout << this->pos << endl;
 
         t += dt;
-        if(t >= Dt) moving = false;
+        if(t >= Dt) {
+          moving = false;
+          t = 0;
+          cout << "END MOVE" << endl;
+        }
       }
 
       auto message = std_msgs::msg::String();
