@@ -1,0 +1,38 @@
+[0.027s] Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1
+[0.093s] [ 16%] Built target RobotModel-lib
+[0.118s] [ 33%] Built target MotorController-lib
+[0.140s] [ 50%] Built target TrajectoryGenerator-lib
+[0.189s] [ 66%] Built target robotNode
+[0.228s] [ 83%] Built target motorNode
+[0.246s] [35m[1mScanning dependencies of target userNode[0m
+[0.310s] [ 91%] [32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o[0m
+[4.373s] [100%] [32m[1mLinking CXX executable userNode[0m
+[4.641s] [100%] Built target userNode
+[4.664s] Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1
+[4.715s] Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub
+[4.727s] -- Install configuration: ""
+[4.728s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/userNode
+[4.733s] -- Set runtime path of "/home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/userNode" to ""
+[4.734s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/robotNode
+[4.739s] -- Set runtime path of "/home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/robotNode" to ""
+[4.740s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/motorNode
+[4.746s] -- Set runtime path of "/home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/motorNode" to ""
+[4.748s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/MotorContollerModule/libMotorController-lib.a
+[4.749s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/TrajectoryGeneratorModule/libTrajectoryGenerator-lib.a
+[4.755s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/RobotModelModule/libRobotModel-lib.a
+[4.757s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/ament_index/resource_index/package_run_dependencies/RobotModelModule
+[4.758s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/ament_index/resource_index/parent_prefix_path/RobotModelModule
+[4.759s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/ament_prefix_path.sh
+[4.760s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/ament_prefix_path.dsv
+[4.761s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/path.sh
+[4.762s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/path.dsv
+[4.763s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.bash
+[4.765s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.sh
+[4.765s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.zsh
+[4.765s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.dsv
+[4.766s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/package.dsv
+[4.767s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/ament_index/resource_index/packages/RobotModelModule
+[4.770s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/cmake/RobotModelModuleConfig.cmake
+[4.770s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/cmake/RobotModelModuleConfig-version.cmake
+[4.771s] -- Installing: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/package.xml
+[4.779s] Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub

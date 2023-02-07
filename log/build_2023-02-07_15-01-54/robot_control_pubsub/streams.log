@@ -1,0 +1,21 @@
+[0.025s] Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1
+[0.070s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.104s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.460s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.517s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.524s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.724s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.816s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.819s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.107s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.172s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
+[1.173s]   rosidl_generate_interfaces() called without any interface files
+[1.174s] Call Stack (most recent call first):
+[1.174s]   CMakeLists.txt:24 (rosidl_generate_interfaces)
+[1.175s] 
+[1.176s] 
+[1.179s] -- Configuring incomplete, errors occurred!
+[1.179s] See also "/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub/CMakeFiles/CMakeOutput.log".
+[1.180s] See also "/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub/CMakeFiles/CMakeError.log".
+[1.190s] make: *** [Makefile:486: cmake_check_build_system] Error 1
+[1.193s] Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1

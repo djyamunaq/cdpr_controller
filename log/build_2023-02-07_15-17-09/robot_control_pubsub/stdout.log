@@ -1,0 +1,28 @@
+[ 16%] Built target RobotModel-lib
+[ 33%] Built target MotorController-lib
+[ 50%] Built target TrajectoryGenerator-lib
+[ 66%] Built target robotNode
+[ 83%] Built target motorNode
+[100%] Built target userNode
+-- Install configuration: ""
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/userNode
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/robotNode
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/robot_control_pubsub/motorNode
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/MotorContollerModule/libMotorController-lib.a
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/TrajectoryGeneratorModule/libTrajectoryGenerator-lib.a
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/lib/RobotModelModule/libRobotModel-lib.a
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/ament_index/resource_index/package_run_dependencies/RobotModelModule
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/ament_index/resource_index/parent_prefix_path/RobotModelModule
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/path.sh
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/environment/path.dsv
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.bash
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.sh
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.zsh
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/local_setup.dsv
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/package.dsv
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/ament_index/resource_index/packages/RobotModelModule
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/cmake/RobotModelModuleConfig.cmake
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/cmake/RobotModelModuleConfig-version.cmake
+-- Up-to-date: /home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub/share/RobotModelModule/package.xml

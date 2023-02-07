@@ -1,0 +1,7 @@
+[ 16%] Built target RobotModel-lib
+[ 33%] Built target MotorController-lib
+[ 50%] Built target TrajectoryGenerator-lib
+[ 66%] Built target robotNode
+[ 83%] Built target motorNode
+[35m[1mScanning dependencies of target userNode[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o[0m

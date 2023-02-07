@@ -1,0 +1,2 @@
+Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/CDPR_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dyxcvi/Documents/ROS2_CDPR_Controller -DCMAKE_INSTALL_PREFIX=/home/dyxcvi/Documents/ROS2_CDPR_Controller/install/CDPR_controller
+Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/CDPR_controller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dyxcvi/Documents/ROS2_CDPR_Controller -DCMAKE_INSTALL_PREFIX=/home/dyxcvi/Documents/ROS2_CDPR_Controller/install/CDPR_controller

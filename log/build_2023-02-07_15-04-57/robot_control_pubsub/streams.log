@@ -1,0 +1,40 @@
+[0.021s] Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1
+[0.086s] [ 16%] Built target RobotModel-lib
+[0.111s] [ 33%] Built target MotorController-lib
+[0.135s] [ 50%] Built target TrajectoryGenerator-lib
+[0.173s] [ 66%] Built target robotNode
+[0.209s] [ 83%] Built target motorNode
+[0.239s] [35m[1mScanning dependencies of target userNode[0m
+[0.309s] [ 91%] [32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o[0m
+[0.563s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:26:54:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.563s]    26 |       this->create_subscription<std_msgs::msg::Bool>([01;35m[K'ready_flag'[m[K, 10, std::bind(&EposNode::readyFlagCallback, this, _1))
+[0.564s]       |                                                      [01;35m[K^~~~~~~~~~~~[m[K
+[2.223s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:[m[K In constructor ‘[01m[KUserNode::UserNode()[m[K’:
+[2.224s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:26:83:[m[K [01;31m[Kerror: [m[K‘[01m[KEposNode[m[K’ has not been declared
+[2.224s]    26 |       this->create_subscription<std_msgs::msg::Bool>('ready_flag', 10, std::bind(&[01;31m[KEposNode[m[K::readyFlagCallback, this, _1))
+[2.226s]       |                                                                                   [01;31m[K^~~~~~~~[m[K
+[2.227s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:26:118:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+[2.228s]    26 |       this->create_subscription<std_msgs::msg::Bool>('ready_flag', 10, std::bind(&EposNode::readyFlagCallback, this, [01;31m[K_1[m[K))
+[2.229s]       |                                                                                                                      [01;31m[K^~[m[K
+[2.230s]       |                                                                                                                      [32m[Kstd::placeholders::_1[m[K
+[2.231s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/context.hpp:19[m[K,
+[2.232s]                  from [01m[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18[m[K,
+[2.233s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:32[m[K,
+[2.233s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.234s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.235s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.236s]                  from [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:4[m[K:
+[2.236s] [01m[K/usr/include/c++/9/functional:211:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+[2.236s]   211 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+[2.236s]       |                                  [01;36m[K^~[m[K
+[2.243s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:[m[K In member function ‘[01m[Kvoid UserNode::timer_callback()[m[K’:
+[2.244s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:47:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kdata[m[K’
+[2.245s]    47 |       message.[01;31m[Kdata[m[K = std::to_string(x) + "|" + std::to_string(y);
+[2.246s]       |               [01;31m[K^~~~[m[K
+[2.258s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:39:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.260s]    39 |       std::future_status [01;35m[Kstatus[m[K = futureCounter.wait_until(std::chrono::system_clock::now() + std::chrono::nanoseconds(100));
+[2.260s]       |                          [01;35m[K^~~~~~[m[K
+[3.583s] make[2]: *** [CMakeFiles/userNode.dir/build.make:63: CMakeFiles/userNode.dir/src/UserNode.cpp.o] Error 1
+[3.586s] make[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/userNode.dir/all] Error 2
+[3.586s] make: *** [Makefile:141: all] Error 2
+[3.587s] Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1

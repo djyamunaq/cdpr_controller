@@ -1,0 +1,385 @@
+[0.000000] (-) TimerEvent: {}
+[0.000456] (robot_control_pubsub) JobQueued: {'identifier': 'robot_control_pubsub', 'dependencies': OrderedDict()}
+[0.000613] (robot_control_pubsub) JobStarted: {'identifier': 'robot_control_pubsub'}
+[0.019090] (robot_control_pubsub) JobProgress: {'identifier': 'robot_control_pubsub', 'progress': 'cmake'}
+[0.020016] (robot_control_pubsub) Command: {'cmd': ['/usr/bin/cmake', '/home/dyxcvi/Documents/ROS2_CDPR_Controller', '-DCMAKE_INSTALL_PREFIX=/home/dyxcvi/Documents/ROS2_CDPR_Controller/install/robot_control_pubsub'], 'cwd': '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dyxcvi'), ('SSH_CLIENT', '192.168.56.1 49985 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dyxcvi'), ('OLDPWD', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build'), ('TERM_PROGRAM_VERSION', '1.75.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b7db4ebb-5b19-4e5c-a2fd-c7b2d03723d4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dyxcvi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/remote-cli:/home/dyxcvi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c8aaccddfd.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub'), ('SSH_CONNECTION', '192.168.56.1 49985 192.168.56.103 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.094869] (-) TimerEvent: {}
+[0.100115] (robot_control_pubsub) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.181339] (robot_control_pubsub) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.190461] (robot_control_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.194937] (-) TimerEvent: {}
+[0.295685] (-) TimerEvent: {}
+[0.327151] (robot_control_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.330102] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.395816] (-) TimerEvent: {}
+[0.444237] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.468602] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.470028] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.476655] (robot_control_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.500858] (-) TimerEvent: {}
+[0.604874] (-) TimerEvent: {}
+[0.605958] (robot_control_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.609707] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.705016] (-) TimerEvent: {}
+[0.744312] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.770617] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.772319] (robot_control_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.777821] (robot_control_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.805149] (-) TimerEvent: {}
+[0.810514] (robot_control_pubsub) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.811665] (robot_control_pubsub) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.905278] (-) TimerEvent: {}
+[1.006089] (-) TimerEvent: {}
+[1.106900] (-) TimerEvent: {}
+[1.116656] (robot_control_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.184537] (robot_control_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.194692] (robot_control_pubsub) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.207006] (-) TimerEvent: {}
+[1.285816] (robot_control_pubsub) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.307150] (-) TimerEvent: {}
+[1.342526] (robot_control_pubsub) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.407291] (-) TimerEvent: {}
+[1.461490] (robot_control_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.507436] (-) TimerEvent: {}
+[1.564518] (robot_control_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.567729] (robot_control_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.571363] (robot_control_pubsub) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.607546] (-) TimerEvent: {}
+[1.687082] (robot_control_pubsub) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.687702] (robot_control_pubsub) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.708853] (-) TimerEvent: {}
+[1.806922] (robot_control_pubsub) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.807537] (robot_control_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.811042] (-) TimerEvent: {}
+[1.902822] (robot_control_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.903312] (robot_control_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.911167] (-) TimerEvent: {}
+[2.011945] (-) TimerEvent: {}
+[2.014015] (robot_control_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.018642] (robot_control_pubsub) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.112088] (-) TimerEvent: {}
+[2.213034] (-) TimerEvent: {}
+[2.311320] (robot_control_pubsub) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[2.313148] (-) TimerEvent: {}
+[2.386826] (robot_control_pubsub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.413292] (-) TimerEvent: {}
+[2.504916] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.513409] (-) TimerEvent: {}
+[2.525263] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.526843] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/include/;/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/TrajectoryGenerator/include/;/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/RobotModel/include/\n'}
+[2.527667] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.544892] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.545802] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.549347] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.554657] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.558951] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.575725] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.576638] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.580151] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.589940] (robot_control_pubsub) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.613701] (-) TimerEvent: {}
+[2.649646] (robot_control_pubsub) StdoutLine: {'line': b'-- Generating done\n'}
+[2.660879] (robot_control_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub\n'}
+[2.673138] (robot_control_pubsub) CommandEnded: {'returncode': 0}
+[2.675494] (robot_control_pubsub) JobProgress: {'identifier': 'robot_control_pubsub', 'progress': 'build'}
+[2.675705] (robot_control_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub', '--', '-j1', '-l1'], 'cwd': '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dyxcvi'), ('SSH_CLIENT', '192.168.56.1 49985 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dyxcvi'), ('OLDPWD', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build'), ('TERM_PROGRAM_VERSION', '1.75.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b7db4ebb-5b19-4e5c-a2fd-c7b2d03723d4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dyxcvi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/remote-cli:/home/dyxcvi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c8aaccddfd.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub'), ('SSH_CONNECTION', '192.168.56.1 49985 192.168.56.103 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.713842] (-) TimerEvent: {}
+[2.725566] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target RobotModel-lib\x1b[0m\n'}
+[2.741000] (robot_control_pubsub) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/RobotModel-lib.dir/src/RobotModel/src/RobotModel.cpp.o\x1b[0m\n'}
+[2.813983] (-) TimerEvent: {}
+[2.914853] (-) TimerEvent: {}
+[3.015653] (-) TimerEvent: {}
+[3.117090] (-) TimerEvent: {}
+[3.217906] (-) TimerEvent: {}
+[3.318777] (-) TimerEvent: {}
+[3.419792] (-) TimerEvent: {}
+[3.521762] (-) TimerEvent: {}
+[3.622761] (-) TimerEvent: {}
+[3.723786] (-) TimerEvent: {}
+[3.825230] (-) TimerEvent: {}
+[3.926067] (-) TimerEvent: {}
+[4.026898] (-) TimerEvent: {}
+[4.061864] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/RobotModel/src/RobotModel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RobotModel::inverseKinematics(Eigen::Vector3d, std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.062718] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/RobotModel/src/RobotModel.cpp:20:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KXd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.063473] (robot_control_pubsub) StderrLine: {'line': b'   20 | void RobotModel::inverseKinematics(\x1b[01;35m\x1b[KEigen::Vector3d Xd\x1b[m\x1b[K, std::vector<int> &Qs) {\n'}
+[4.064231] (robot_control_pubsub) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[4.127013] (-) TimerEvent: {}
+[4.227818] (-) TimerEvent: {}
+[4.328774] (-) TimerEvent: {}
+[4.429802] (-) TimerEvent: {}
+[4.530786] (-) TimerEvent: {}
+[4.551542] (robot_control_pubsub) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking CXX static library libRobotModel-lib.a\x1b[0m\n'}
+[4.596733] (robot_control_pubsub) StdoutLine: {'line': b'[ 16%] Built target RobotModel-lib\n'}
+[4.607495] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target MotorController-lib\x1b[0m\n'}
+[4.623477] (robot_control_pubsub) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/MotorController-lib.dir/src/MotorController/src/MotorController.cpp.o\x1b[0m\n'}
+[4.630890] (-) TimerEvent: {}
+[4.731661] (-) TimerEvent: {}
+[4.832464] (-) TimerEvent: {}
+[4.934898] (-) TimerEvent: {}
+[4.970228] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid epos::MotorController::LogError(std::string, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.971205] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:5:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.971955] (robot_control_pubsub) StderrLine: {'line': b'    5 |     if(\x1b[01;35m\x1b[KerrorCode == -1\x1b[m\x1b[K) {\n'}
+[4.972689] (robot_control_pubsub) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[4.986544] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid epos::MotorController::connect(std::string, std::string, std::string, std::string, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.987406] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:90:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[4.988143] (robot_control_pubsub) StderrLine: {'line': b'   90 |     delete c_deviceName, c_protocolName, \x1b[01;35m\x1b[Kc_interfaceName\x1b[m\x1b[K, c_portName;\n'}
+[4.988907] (robot_control_pubsub) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.989669] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:90:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[4.990448] (robot_control_pubsub) StderrLine: {'line': b'   90 |     delete c_deviceName, c_protocolName, c_interfaceName, \x1b[01;35m\x1b[Kc_portName\x1b[m\x1b[K;\n'}
+[4.991143] (robot_control_pubsub) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.992256] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:90:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[4.992974] (robot_control_pubsub) StderrLine: {'line': b'   90 |     delete c_deviceName, c_protocolName, c_interfaceName, c_portName\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[4.993636] (robot_control_pubsub) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.995627] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid epos::MotorController::checkMotorState(unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.996321] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:117:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KerrorCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.997051] (robot_control_pubsub) StderrLine: {'line': b'  117 |     unsigned int \x1b[01;35m\x1b[KerrorCode\x1b[m\x1b[K, lBaudrate, lTimeout;\n'}
+[4.997715] (robot_control_pubsub) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.999611] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid epos::MotorController::startMovement(unsigned int, unsigned int, unsigned int, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.000309] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/src/MotorController.cpp:187:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KisFault\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[5.001071] (robot_control_pubsub) StderrLine: {'line': b'  187 |     int \x1b[01;35m\x1b[KisFault\x1b[m\x1b[K;\n'}
+[5.001802] (robot_control_pubsub) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.034999] (-) TimerEvent: {}
+[5.135802] (-) TimerEvent: {}
+[5.194576] (robot_control_pubsub) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX static library libMotorController-lib.a\x1b[0m\n'}
+[5.232857] (robot_control_pubsub) StdoutLine: {'line': b'[ 33%] Built target MotorController-lib\n'}
+[5.235935] (-) TimerEvent: {}
+[5.245767] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target TrajectoryGenerator-lib\x1b[0m\n'}
+[5.262183] (robot_control_pubsub) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/TrajectoryGenerator-lib.dir/src/TrajectoryGenerator/src/TrajectoryGenerator.cpp.o\x1b[0m\n'}
+[5.336076] (-) TimerEvent: {}
+[5.439135] (-) TimerEvent: {}
+[5.539953] (-) TimerEvent: {}
+[5.640797] (-) TimerEvent: {}
+[5.742023] (-) TimerEvent: {}
+[5.842877] (-) TimerEvent: {}
+[5.944203] (-) TimerEvent: {}
+[6.045087] (-) TimerEvent: {}
+[6.145846] (-) TimerEvent: {}
+[6.246908] (-) TimerEvent: {}
+[6.347750] (-) TimerEvent: {}
+[6.448704] (-) TimerEvent: {}
+[6.549748] (-) TimerEvent: {}
+[6.650782] (-) TimerEvent: {}
+[6.751783] (-) TimerEvent: {}
+[6.852836] (-) TimerEvent: {}
+[6.953709] (-) TimerEvent: {}
+[7.054740] (-) TimerEvent: {}
+[7.155773] (-) TimerEvent: {}
+[7.256712] (-) TimerEvent: {}
+[7.357768] (-) TimerEvent: {}
+[7.459024] (-) TimerEvent: {}
+[7.559869] (-) TimerEvent: {}
+[7.660656] (-) TimerEvent: {}
+[7.761525] (-) TimerEvent: {}
+[7.862368] (-) TimerEvent: {}
+[7.963155] (-) TimerEvent: {}
+[8.063954] (-) TimerEvent: {}
+[8.164813] (-) TimerEvent: {}
+[8.265794] (-) TimerEvent: {}
+[8.366832] (-) TimerEvent: {}
+[8.467872] (-) TimerEvent: {}
+[8.568693] (-) TimerEvent: {}
+[8.669717] (-) TimerEvent: {}
+[8.770760] (-) TimerEvent: {}
+[8.871738] (-) TimerEvent: {}
+[8.972507] (-) TimerEvent: {}
+[9.073363] (-) TimerEvent: {}
+[9.160850] (robot_control_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libTrajectoryGenerator-lib.a\x1b[0m\n'}
+[9.173498] (-) TimerEvent: {}
+[9.221889] (robot_control_pubsub) StdoutLine: {'line': b'[ 50%] Built target TrajectoryGenerator-lib\n'}
+[9.233039] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target robotNode\x1b[0m\n'}
+[9.273634] (-) TimerEvent: {}
+[9.316926] (robot_control_pubsub) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robotNode.dir/src/RobotNode.cpp.o\x1b[0m\n'}
+[9.373764] (-) TimerEvent: {}
+[9.474076] (-) TimerEvent: {}
+[9.575278] (-) TimerEvent: {}
+[9.677217] (-) TimerEvent: {}
+[9.778083] (-) TimerEvent: {}
+[9.878908] (-) TimerEvent: {}
+[9.979705] (-) TimerEvent: {}
+[10.080854] (-) TimerEvent: {}
+[10.181688] (-) TimerEvent: {}
+[10.282743] (-) TimerEvent: {}
+[10.383774] (-) TimerEvent: {}
+[10.484800] (-) TimerEvent: {}
+[10.585827] (-) TimerEvent: {}
+[10.686854] (-) TimerEvent: {}
+[10.787872] (-) TimerEvent: {}
+[10.888693] (-) TimerEvent: {}
+[10.989689] (-) TimerEvent: {}
+[11.090437] (-) TimerEvent: {}
+[11.191285] (-) TimerEvent: {}
+[11.292519] (-) TimerEvent: {}
+[11.393390] (-) TimerEvent: {}
+[11.494205] (-) TimerEvent: {}
+[11.595011] (-) TimerEvent: {}
+[11.695825] (-) TimerEvent: {}
+[11.796818] (-) TimerEvent: {}
+[11.897802] (-) TimerEvent: {}
+[11.999450] (-) TimerEvent: {}
+[12.100253] (-) TimerEvent: {}
+[12.201062] (-) TimerEvent: {}
+[12.301869] (-) TimerEvent: {}
+[12.402708] (-) TimerEvent: {}
+[12.503701] (-) TimerEvent: {}
+[12.604531] (-) TimerEvent: {}
+[12.705363] (-) TimerEvent: {}
+[12.806150] (-) TimerEvent: {}
+[12.906949] (-) TimerEvent: {}
+[13.007792] (-) TimerEvent: {}
+[13.109126] (-) TimerEvent: {}
+[13.209953] (-) TimerEvent: {}
+[13.310727] (-) TimerEvent: {}
+[13.411725] (-) TimerEvent: {}
+[13.512790] (-) TimerEvent: {}
+[13.613808] (-) TimerEvent: {}
+[13.714684] (-) TimerEvent: {}
+[13.815476] (-) TimerEvent: {}
+[13.916289] (-) TimerEvent: {}
+[14.017131] (-) TimerEvent: {}
+[14.118366] (-) TimerEvent: {}
+[14.219193] (-) TimerEvent: {}
+[14.319973] (-) TimerEvent: {}
+[14.420774] (-) TimerEvent: {}
+[14.521761] (-) TimerEvent: {}
+[14.622731] (-) TimerEvent: {}
+[14.723680] (-) TimerEvent: {}
+[14.825527] (-) TimerEvent: {}
+[14.927868] (-) TimerEvent: {}
+[15.028207] (-) TimerEvent: {}
+[15.129146] (-) TimerEvent: {}
+[15.229999] (-) TimerEvent: {}
+[15.330823] (-) TimerEvent: {}
+[15.432320] (-) TimerEvent: {}
+[15.533123] (-) TimerEvent: {}
+[15.642262] (-) TimerEvent: {}
+[15.743671] (-) TimerEvent: {}
+[15.844475] (-) TimerEvent: {}
+[15.945479] (-) TimerEvent: {}
+[16.046279] (-) TimerEvent: {}
+[16.147078] (-) TimerEvent: {}
+[16.247883] (-) TimerEvent: {}
+[16.348727] (-) TimerEvent: {}
+[16.449731] (-) TimerEvent: {}
+[16.550757] (-) TimerEvent: {}
+[16.651780] (-) TimerEvent: {}
+[16.752831] (-) TimerEvent: {}
+[16.853797] (-) TimerEvent: {}
+[16.954819] (-) TimerEvent: {}
+[17.055776] (-) TimerEvent: {}
+[17.156800] (-) TimerEvent: {}
+[17.257806] (-) TimerEvent: {}
+[17.359242] (-) TimerEvent: {}
+[17.460082] (-) TimerEvent: {}
+[17.560829] (-) TimerEvent: {}
+[17.579132] (robot_control_pubsub) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable robotNode\x1b[0m\n'}
+[17.660970] (-) TimerEvent: {}
+[17.761810] (-) TimerEvent: {}
+[17.862891] (-) TimerEvent: {}
+[17.963724] (-) TimerEvent: {}
+[18.006038] (robot_control_pubsub) StdoutLine: {'line': b'[ 66%] Built target robotNode\n'}
+[18.017496] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target motorNode\x1b[0m\n'}
+[18.068830] (-) TimerEvent: {}
+[18.101888] (robot_control_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/motorNode.dir/src/MotorNode.cpp.o\x1b[0m\n'}
+[18.168968] (-) TimerEvent: {}
+[18.269285] (-) TimerEvent: {}
+[18.370120] (-) TimerEvent: {}
+[18.471016] (-) TimerEvent: {}
+[18.572168] (-) TimerEvent: {}
+[18.673019] (-) TimerEvent: {}
+[18.773827] (-) TimerEvent: {}
+[18.874852] (-) TimerEvent: {}
+[18.976037] (-) TimerEvent: {}
+[19.076900] (-) TimerEvent: {}
+[19.177759] (-) TimerEvent: {}
+[19.278721] (-) TimerEvent: {}
+[19.379741] (-) TimerEvent: {}
+[19.480760] (-) TimerEvent: {}
+[19.581811] (-) TimerEvent: {}
+[19.683366] (-) TimerEvent: {}
+[19.784137] (-) TimerEvent: {}
+[19.884909] (-) TimerEvent: {}
+[19.985736] (-) TimerEvent: {}
+[20.086784] (-) TimerEvent: {}
+[20.187745] (-) TimerEvent: {}
+[20.288713] (-) TimerEvent: {}
+[20.389625] (-) TimerEvent: {}
+[20.400028] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorNode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.400986] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorNode.cpp:62:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KerrorCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[20.401849] (robot_control_pubsub) StderrLine: {'line': b'   62 |   unsigned int \x1b[01;35m\x1b[KerrorCode\x1b[m\x1b[K;\n'}
+[20.402727] (robot_control_pubsub) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[20.489753] (-) TimerEvent: {}
+[20.590774] (-) TimerEvent: {}
+[20.691776] (-) TimerEvent: {}
+[20.793073] (-) TimerEvent: {}
+[20.893949] (-) TimerEvent: {}
+[20.994807] (-) TimerEvent: {}
+[21.095770] (-) TimerEvent: {}
+[21.196760] (-) TimerEvent: {}
+[21.297771] (-) TimerEvent: {}
+[21.398747] (-) TimerEvent: {}
+[21.499752] (-) TimerEvent: {}
+[21.600762] (-) TimerEvent: {}
+[21.701784] (-) TimerEvent: {}
+[21.802748] (-) TimerEvent: {}
+[21.903774] (-) TimerEvent: {}
+[22.004748] (-) TimerEvent: {}
+[22.105806] (-) TimerEvent: {}
+[22.206800] (-) TimerEvent: {}
+[22.307837] (-) TimerEvent: {}
+[22.409213] (-) TimerEvent: {}
+[22.510231] (-) TimerEvent: {}
+[22.611089] (-) TimerEvent: {}
+[22.711912] (-) TimerEvent: {}
+[22.812702] (-) TimerEvent: {}
+[22.913553] (-) TimerEvent: {}
+[23.014421] (-) TimerEvent: {}
+[23.115225] (-) TimerEvent: {}
+[23.217226] (-) TimerEvent: {}
+[23.318045] (-) TimerEvent: {}
+[23.418843] (-) TimerEvent: {}
+[23.519738] (-) TimerEvent: {}
+[23.620731] (-) TimerEvent: {}
+[23.721526] (-) TimerEvent: {}
+[23.822377] (-) TimerEvent: {}
+[23.928024] (-) TimerEvent: {}
+[24.028805] (-) TimerEvent: {}
+[24.129867] (-) TimerEvent: {}
+[24.230665] (-) TimerEvent: {}
+[24.331432] (-) TimerEvent: {}
+[24.432285] (-) TimerEvent: {}
+[24.533135] (-) TimerEvent: {}
+[24.633913] (-) TimerEvent: {}
+[24.734734] (-) TimerEvent: {}
+[24.835772] (-) TimerEvent: {}
+[24.941703] (-) TimerEvent: {}
+[25.043917] (-) TimerEvent: {}
+[25.144748] (-) TimerEvent: {}
+[25.245743] (-) TimerEvent: {}
+[25.346722] (-) TimerEvent: {}
+[25.447647] (-) TimerEvent: {}
+[25.548504] (-) TimerEvent: {}
+[25.649362] (-) TimerEvent: {}
+[25.750193] (-) TimerEvent: {}
+[25.851002] (-) TimerEvent: {}
+[25.889991] (robot_control_pubsub) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable motorNode\x1b[0m\n'}
+[25.951167] (-) TimerEvent: {}
+[26.051997] (-) TimerEvent: {}
+[26.152817] (-) TimerEvent: {}
+[26.253850] (-) TimerEvent: {}
+[26.321524] (robot_control_pubsub) StdoutLine: {'line': b'[ 83%] Built target motorNode\n'}
+[26.332647] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target userNode\x1b[0m\n'}
+[26.353973] (-) TimerEvent: {}
+[26.413859] (robot_control_pubsub) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o\x1b[0m\n'}
+[26.454107] (-) TimerEvent: {}
+[26.554420] (-) TimerEvent: {}
+[26.617665] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kgeometry_msgs/Point.hpp: No such file or directory\n'}
+[26.618555] (robot_control_pubsub) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K"geometry_msgs/Point.hpp"\x1b[m\x1b[K\n'}
+[26.619292] (robot_control_pubsub) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.620046] (robot_control_pubsub) StderrLine: {'line': b'compilation terminated.\n'}
+[26.622743] (robot_control_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/userNode.dir/build.make:63: CMakeFiles/userNode.dir/src/UserNode.cpp.o] Error 1\n'}
+[26.624804] (robot_control_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/userNode.dir/all] Error 2\n'}
+[26.625492] (robot_control_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[26.629029] (robot_control_pubsub) CommandEnded: {'returncode': 2}
+[26.654566] (-) TimerEvent: {}
+[26.698197] (robot_control_pubsub) JobEnded: {'identifier': 'robot_control_pubsub', 'rc': 2}
+[26.704435] (-) EventReactorShutdown: {}

@@ -1,0 +1,73 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/include/;/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/TrajectoryGenerator/include/;/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/RobotModel/include/
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub
+[35m[1mScanning dependencies of target RobotModel-lib[0m
+[  8%] [32mBuilding CXX object CMakeFiles/RobotModel-lib.dir/src/RobotModel/src/RobotModel.cpp.o[0m
+[ 16%] [32m[1mLinking CXX static library libRobotModel-lib.a[0m
+[ 16%] Built target RobotModel-lib
+[35m[1mScanning dependencies of target MotorController-lib[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/MotorController-lib.dir/src/MotorController/src/MotorController.cpp.o[0m
+[ 33%] [32m[1mLinking CXX static library libMotorController-lib.a[0m
+[ 33%] Built target MotorController-lib
+[35m[1mScanning dependencies of target TrajectoryGenerator-lib[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/TrajectoryGenerator-lib.dir/src/TrajectoryGenerator/src/TrajectoryGenerator.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libTrajectoryGenerator-lib.a[0m
+[ 50%] Built target TrajectoryGenerator-lib
+[35m[1mScanning dependencies of target robotNode[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/robotNode.dir/src/RobotNode.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable robotNode[0m
+[ 66%] Built target robotNode
+[35m[1mScanning dependencies of target motorNode[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/motorNode.dir/src/MotorNode.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable motorNode[0m
+[ 83%] Built target motorNode
+[35m[1mScanning dependencies of target userNode[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o[0m

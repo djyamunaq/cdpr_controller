@@ -1,0 +1,153 @@
+[0.000000] (-) TimerEvent: {}
+[0.000469] (robot_control_pubsub) JobQueued: {'identifier': 'robot_control_pubsub', 'dependencies': OrderedDict()}
+[0.000622] (robot_control_pubsub) JobStarted: {'identifier': 'robot_control_pubsub'}
+[0.020377] (robot_control_pubsub) JobProgress: {'identifier': 'robot_control_pubsub', 'progress': 'cmake'}
+[0.022180] (robot_control_pubsub) JobProgress: {'identifier': 'robot_control_pubsub', 'progress': 'build'}
+[0.023501] (robot_control_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub', '--', '-j1', '-l1'], 'cwd': '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dyxcvi'), ('SSH_CLIENT', '192.168.56.1 49985 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dyxcvi'), ('OLDPWD', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build'), ('TERM_PROGRAM_VERSION', '1.75.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b7db4ebb-5b19-4e5c-a2fd-c7b2d03723d4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dyxcvi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dyxcvi/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/remote-cli:/home/dyxcvi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c8aaccddfd.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub'), ('SSH_CONNECTION', '192.168.56.1 49985 192.168.56.103 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.061571] (robot_control_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.090736] (robot_control_pubsub) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.093409] (-) TimerEvent: {}
+[0.194006] (-) TimerEvent: {}
+[0.294803] (-) TimerEvent: {}
+[0.395668] (-) TimerEvent: {}
+[0.437747] (robot_control_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.491415] (robot_control_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.495774] (-) TimerEvent: {}
+[0.498906] (robot_control_pubsub) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.595927] (-) TimerEvent: {}
+[0.692482] (robot_control_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.696041] (-) TimerEvent: {}
+[0.785433] (robot_control_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.788924] (robot_control_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.796142] (-) TimerEvent: {}
+[0.896836] (-) TimerEvent: {}
+[0.997964] (-) TimerEvent: {}
+[1.087652] (robot_control_pubsub) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.098068] (-) TimerEvent: {}
+[1.160148] (robot_control_pubsub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.198206] (-) TimerEvent: {}
+[1.262718] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.289535] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.291173] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dyxcvi/Documents/ROS2_CDPR_Controller/src/MotorController/include/;/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/TrajectoryGenerator/include/;/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/RobotModel/include/\n'}
+[1.295168] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.300013] (-) TimerEvent: {}
+[1.336160] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.337072] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.341327] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.348093] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.352092] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.376341] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.377214] (robot_control_pubsub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.381237] (robot_control_pubsub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.386919] (robot_control_pubsub) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401000] (-) TimerEvent: {}
+[1.448675] (robot_control_pubsub) StdoutLine: {'line': b'-- Generating done\n'}
+[1.459879] (robot_control_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub\n'}
+[1.501148] (-) TimerEvent: {}
+[1.505224] (robot_control_pubsub) StdoutLine: {'line': b'[ 16%] Built target RobotModel-lib\n'}
+[1.528943] (robot_control_pubsub) StdoutLine: {'line': b'[ 33%] Built target MotorController-lib\n'}
+[1.550171] (robot_control_pubsub) StdoutLine: {'line': b'[ 50%] Built target TrajectoryGenerator-lib\n'}
+[1.582682] (robot_control_pubsub) StdoutLine: {'line': b'[ 66%] Built target robotNode\n'}
+[1.601281] (-) TimerEvent: {}
+[1.620660] (robot_control_pubsub) StdoutLine: {'line': b'[ 83%] Built target motorNode\n'}
+[1.634212] (robot_control_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target userNode\x1b[0m\n'}
+[1.701527] (-) TimerEvent: {}
+[1.762349] (robot_control_pubsub) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o\x1b[0m\n'}
+[1.801701] (-) TimerEvent: {}
+[1.902038] (-) TimerEvent: {}
+[2.002355] (-) TimerEvent: {}
+[2.018660] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:25:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcharacter constant too long for its type\n'}
+[2.019960] (robot_control_pubsub) StderrLine: {'line': b"   25 |       this->create_subscription<std_msgs::msg::Bool>(\x1b[01;35m\x1b[K'ready_flag'\x1b[m\x1b[K, 10, std::bind(&EposNode::readyFlagCallback, this, _1))\n"}
+[2.020718] (robot_control_pubsub) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.102841] (-) TimerEvent: {}
+[2.203707] (-) TimerEvent: {}
+[2.304535] (-) TimerEvent: {}
+[2.405326] (-) TimerEvent: {}
+[2.506249] (-) TimerEvent: {}
+[2.607867] (-) TimerEvent: {}
+[2.708709] (-) TimerEvent: {}
+[2.810052] (-) TimerEvent: {}
+[2.910848] (-) TimerEvent: {}
+[3.011683] (-) TimerEvent: {}
+[3.112527] (-) TimerEvent: {}
+[3.213315] (-) TimerEvent: {}
+[3.314124] (-) TimerEvent: {}
+[3.414961] (-) TimerEvent: {}
+[3.515771] (-) TimerEvent: {}
+[3.595517] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KUserNode::UserNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.596367] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:23:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.597115] (robot_control_pubsub) StderrLine: {'line': b'   23 |       publisher_ = this->create_publisher<geometry_msgs::\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K>("desired_pos", 10);\n'}
+[3.597906] (robot_control_pubsub) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.598698] (robot_control_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/point.hpp:7\x1b[m\x1b[K,\n'}
+[3.599426] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:6\x1b[m\x1b[K:\n'}
+[3.600158] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:149:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.600858] (robot_control_pubsub) StderrLine: {'line': b'  149 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[3.601554] (robot_control_pubsub) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.603144] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:23:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.603308] (robot_control_pubsub) StderrLine: {'line': b'   23 |       publisher_ = this->create_publisher<geometry_msgs::\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K>("desired_pos", 10);\n'}
+[3.604501] (robot_control_pubsub) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.604676] (robot_control_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/point.hpp:7\x1b[m\x1b[K,\n'}
+[3.604822] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:6\x1b[m\x1b[K:\n'}
+[3.604960] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:149:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.605097] (robot_control_pubsub) StderrLine: {'line': b'  149 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[3.605229] (robot_control_pubsub) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.605435] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:23:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KUserNode::create_publisher<<expression error> >(const char [12], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.609686] (robot_control_pubsub) StderrLine: {'line': b'   23 |       publisher_ = this->create_publisher<geometry_msgs::Point>("desired_pos", 10\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.609855] (robot_control_pubsub) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.610079] (robot_control_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[3.610221] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[3.610382] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.610520] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:4\x1b[m\x1b[K:\n'}
+[3.610662] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.610801] (robot_control_pubsub) StderrLine: {'line': b'  184 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[3.610934] (robot_control_pubsub) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.611080] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.611235] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:23:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.611405] (robot_control_pubsub) StderrLine: {'line': b'   23 |       publisher_ = this->create_publisher<geometry_msgs::Point>("desired_pos", 10\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.612065] (robot_control_pubsub) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.612207] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:25:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.612385] (robot_control_pubsub) StderrLine: {'line': b"   25 |       this->create_subscription<std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K>('ready_flag', 10, std::bind(&EposNode::readyFlagCallback, this, _1))\n"}
+[3.612522] (robot_control_pubsub) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.613072] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:25:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.613300] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:25:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEposNode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.613449] (robot_control_pubsub) StderrLine: {'line': b"   25 |       this->create_subscription<std_msgs::msg::Bool>('ready_flag', 10, std::bind(&\x1b[01;31m\x1b[KEposNode\x1b[m\x1b[K::readyFlagCallback, this, _1))\n"}
+[3.617543] (robot_control_pubsub) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.617665] (-) TimerEvent: {}
+[3.617809] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:25:118:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.620127] (robot_control_pubsub) StderrLine: {'line': b"   25 |       this->create_subscription<std_msgs::msg::Bool>('ready_flag', 10, std::bind(&EposNode::readyFlagCallback, this, \x1b[01;31m\x1b[K_1\x1b[m\x1b[K))\n"}
+[3.620265] (robot_control_pubsub) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.620367] (robot_control_pubsub) StderrLine: {'line': b'      |                                                                                                                      \x1b[32m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\n'}
+[3.620464] (robot_control_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/context.hpp:19\x1b[m\x1b[K,\n'}
+[3.620559] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18\x1b[m\x1b[K,\n'}
+[3.620653] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:32\x1b[m\x1b[K,\n'}
+[3.620746] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.620847] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.620940] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.621054] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:4\x1b[m\x1b[K:\n'}
+[3.621157] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:211:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.621252] (robot_control_pubsub) StderrLine: {'line': b'  211 |     extern const _Placeholder<1> \x1b[01;36m\x1b[K_1\x1b[m\x1b[K;\n'}
+[3.621345] (robot_control_pubsub) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.622944] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid UserNode::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.623130] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:35:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.623276] (robot_control_pubsub) StderrLine: {'line': b'   35 |       auto message = geometry_msgs::\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K();\n'}
+[3.623413] (robot_control_pubsub) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.628038] (robot_control_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/point.hpp:7\x1b[m\x1b[K,\n'}
+[3.628198] (robot_control_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:6\x1b[m\x1b[K:\n'}
+[3.628298] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:149:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.628396] (robot_control_pubsub) StderrLine: {'line': b'  149 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[3.628490] (robot_control_pubsub) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.633791] (robot_control_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:38:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kstatus\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[3.634069] (robot_control_pubsub) StderrLine: {'line': b'   38 |       std::future_status \x1b[01;35m\x1b[Kstatus\x1b[m\x1b[K = futureCounter.wait_until(std::chrono::system_clock::now() + std::chrono::nanoseconds(100));\n'}
+[3.634228] (robot_control_pubsub) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.717784] (-) TimerEvent: {}
+[3.818570] (-) TimerEvent: {}
+[3.919955] (-) TimerEvent: {}
+[4.020746] (-) TimerEvent: {}
+[4.121618] (-) TimerEvent: {}
+[4.215982] (robot_control_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/userNode.dir/build.make:63: CMakeFiles/userNode.dir/src/UserNode.cpp.o] Error 1\n'}
+[4.218096] (robot_control_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/userNode.dir/all] Error 2\n'}
+[4.218811] (robot_control_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[4.222306] (robot_control_pubsub) CommandEnded: {'returncode': 2}
+[4.224169] (-) TimerEvent: {}
+[4.290915] (robot_control_pubsub) JobEnded: {'identifier': 'robot_control_pubsub', 'rc': 2}
+[4.296912] (-) EventReactorShutdown: {}

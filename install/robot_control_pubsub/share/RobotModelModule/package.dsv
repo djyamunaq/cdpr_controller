@@ -1,0 +1,4 @@
+source;share/RobotModelModule/local_setup.bash
+source;share/RobotModelModule/local_setup.dsv
+source;share/RobotModelModule/local_setup.sh
+source;share/RobotModelModule/local_setup.zsh

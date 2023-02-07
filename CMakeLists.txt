@@ -19,19 +19,26 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread" )
 
-add_executable(user_node src/user_node.cpp)
-ament_target_dependencies(user_node rclcpp std_msgs)
+# ----------------------------------------------------------
+# User Node
+add_executable(userNode src/UserNode.cpp)
+ament_target_dependencies(userNode rclcpp std_msgs geometry_msgs)
 
-add_executable(motor_node src/motor_node.cpp)
-target_link_libraries(motor_node TrajectoryGenerator-lib)
-ament_target_dependencies(motor_node rclcpp std_msgs)
+# ----------------------------------------------------------
+# Robot Node
+add_executable(robotNode src/RobotNode.cpp)
+target_link_libraries(robotNode TrajectoryGenerator-lib)
+ament_target_dependencies(robotNode rclcpp std_msgs geometry_msgs)
 
-add_executable(epos_node src/epos_node.cpp)
-target_link_libraries(epos_node MotorController-lib)
-ament_target_dependencies(epos_node rclcpp std_msgs)
+# ----------------------------------------------------------
+# Motor Node
+add_executable(motorNode src/MotorNode.cpp)
+target_link_libraries(motorNode MotorController-lib)
+ament_target_dependencies(motorNode rclcpp std_msgs geometry_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -39,12 +46,13 @@ if(BUILD_TESTING)
 endif()
 
 install(TARGETS
-  user_node
-  motor_node
-  epos_node
+  userNode
+  robotNode
+  motorNode
   DESTINATION lib/${PROJECT_NAME})
 
-include(${CMAKE_SOURCE_DIR}/MotorController/CMakeLists.txt)
-include(${CMAKE_SOURCE_DIR}/TrajectoryGenerator/CMakeLists.txt)
+include(${CMAKE_SOURCE_DIR}/src/MotorController/CMakeLists.txt)
+include(${CMAKE_SOURCE_DIR}/src/TrajectoryGenerator/CMakeLists.txt)
+include(${CMAKE_SOURCE_DIR}/src/RobotModel/CMakeLists.txt)
 
 ament_package()

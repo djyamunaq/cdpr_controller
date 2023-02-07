@@ -1,0 +1,22 @@
+[0.024s] Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1
+[0.102s] [ 16%] Built target RobotModel-lib
+[0.124s] [ 33%] Built target MotorController-lib
+[0.147s] [ 50%] Built target TrajectoryGenerator-lib
+[0.196s] [ 66%] Built target robotNode
+[0.244s] [ 83%] Built target motorNode
+[0.275s] [35m[1mScanning dependencies of target userNode[0m
+[0.338s] [ 91%] [32mBuilding CXX object CMakeFiles/userNode.dir/src/UserNode.cpp.o[0m
+[0.568s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:26:54:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.569s]    26 |       this->create_subscription<std_msgs::msg::Bool>([01;35m[K'ready_flag'[m[K, 10, std::bind(&UserNode::readyFlagCallback, this, _std::placeholders::1))
+[0.570s]       |                                                      [01;35m[K^~~~~~~~~~~~[m[K
+[2.188s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:[m[K In constructor ‘[01m[KUserNode::UserNode()[m[K’:
+[2.189s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:26:118:[m[K [01;31m[Kerror: [m[K‘[01m[K_std[m[K’ has not been declared
+[2.190s]    26 |       this->create_subscription<std_msgs::msg::Bool>('ready_flag', 10, std::bind(&UserNode::readyFlagCallback, this, [01;31m[K_std[m[K::placeholders::1))
+[2.191s]       |                                                                                                                      [01;31m[K^~~~[m[K
+[2.191s] [01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:26:138:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[2.192s]    26 |       this->create_subscription<std_msgs::msg::Bool>('ready_flag', 10, std::bind(&UserNode::readyFlagCallback, this, _std::placeholders::[01;31m[K1[m[K))
+[2.192s]       |                                                                                                                                          [01;31m[K^[m[K
+[3.288s] make[2]: *** [CMakeFiles/userNode.dir/build.make:63: CMakeFiles/userNode.dir/src/UserNode.cpp.o] Error 1
+[3.289s] make[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/userNode.dir/all] Error 2
+[3.290s] make: *** [Makefile:141: all] Error 2
+[3.291s] Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1

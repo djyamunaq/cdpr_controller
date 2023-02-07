@@ -1,0 +1,7 @@
+[01m[K/home/dyxcvi/Documents/ROS2_CDPR_Controller/src/UserNode.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs: No such file or directory
+    6 | #include [01;31m[K"geometry_msgs"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/userNode.dir/build.make:63: CMakeFiles/userNode.dir/src/UserNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/userNode.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
