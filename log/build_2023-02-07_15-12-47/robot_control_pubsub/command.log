@@ -1,2 +1,0 @@
-Invoking command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1
-Invoked command in '/home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dyxcvi/Documents/ROS2_CDPR_Controller/build/robot_control_pubsub -- -j1 -l1

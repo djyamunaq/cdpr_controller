@@ -1,7 +1,0 @@
-CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
-  rosidl_generate_interfaces() called without any interface files
-Call Stack (most recent call first):
-  CMakeLists.txt:24 (rosidl_generate_interfaces)
-
-
-make: *** [Makefile:486: cmake_check_build_system] Error 1
