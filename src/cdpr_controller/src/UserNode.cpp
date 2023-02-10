@@ -11,7 +11,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-unsigned int x, y, xPrev, yPrev;
+double x, y, xPrev, yPrev;
 
 int getData() {
   cin >> x >> y;
