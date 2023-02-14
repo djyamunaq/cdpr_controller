@@ -1,10 +1,22 @@
 # CDPR: ROS2 Controller
 
-## User node
+## How to use
+
+Go to project workspace source directory (e.g., /project_ws/src) and clone the repo. Then build the package.
+
+```
+cd project_ws/src
+git clone git@github.com:djyamunaq/cdpr_controller.git
+cd ..
+colcon build packages-select cdpr_controller
+```
+
+## Components
+### User node
 1. Get position (x, y) from stdin
 2. Publish to topic "desired_pos"
 
-## Robot node
+### Robot node
 1. Subscribe and receive positions (x, y) from topic "desired_pos"
 2. Calculate trajectory to received robot position
 3. Initialize time t=0
@@ -12,7 +24,7 @@
 5. Publish motor positions to topics "motor_left_pos" and "motor_right_pos"
 6. Increment time t: IF trajectory completed THEN finish ELSE go to step 4
 
-## Motor node
+### Motor node
 1. Initialize motors interfaces and communication with drivers
 2. Subscribe and receive data from topics "motor_left_pos" and "motor_right_pos"
 3. Receive motor positions qRight and qLeft
