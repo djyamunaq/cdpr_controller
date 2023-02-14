@@ -55,14 +55,13 @@ class MotorNode : public rclcpp::Node {
     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr motorRightSub;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr readyFlagPub;
     rclcpp::TimerBase::SharedPtr timer_;
-    unsigned int motorRightId = 1;
-    unsigned int motorLeftId = 2;
+    unsigned int motorRightId = 2;
+    unsigned int motorLeftId = 1;
 };
 
 int main(int argc, char * argv[]) {
   /* =================================================================== */
   /* Motor configuration*/
-  unsigned int errorCode;
   string deviceName = "EPOS2";
   string protocolName = MAXON_SERIAL_V2;
   string interfaceName = "USB";

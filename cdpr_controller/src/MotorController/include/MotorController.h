@@ -72,7 +72,7 @@ namespace epos {
             MovementProfile getMovementProfile(unsigned int nodeId);
             void printMovementProfile(unsigned int nodeId);
         private:
-            void LogError(string functionName, unsigned int errorCode);
+            void LogError(string functionName, int errorCode);
             void LogInfo(string info);
             void LogDebug(string debugInfo);
             HANDLE deviceHandle{0};

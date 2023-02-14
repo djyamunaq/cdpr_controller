@@ -7,9 +7,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 find_package (Eigen3 3.3.7 REQUIRED)
 
-add_library                (RobotModel-lib STATIC ${CMAKE_SOURCE_DIR}/RobotModel/src/RobotModel.cpp)
+add_library                (RobotModel-lib STATIC ${CMAKE_SOURCE_DIR}/src/RobotModel/src/RobotModel.cpp)
 target_link_libraries      (RobotModel-lib Eigen3::Eigen)
-target_include_directories (RobotModel-lib PUBLIC ${CMAKE_SOURCE_DIR}/RobotModel/include/)
+target_include_directories (RobotModel-lib PUBLIC ${CMAKE_SOURCE_DIR}/src/RobotModel/include/)
 
 install(TARGETS
     RobotModel-lib

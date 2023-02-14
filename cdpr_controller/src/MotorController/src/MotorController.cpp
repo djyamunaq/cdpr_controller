@@ -1,13 +1,13 @@
 #include "MotorController.h"
 
-void epos::MotorController::LogError(string info, unsigned int errorCode) {
+void epos::MotorController::LogError(string info, int errorCode) {
     char* errorInfo = new char[1000];
     if(errorCode == -1) {
-        cout << "\033[1;31m[" << std::hex << this->errorCode << std::dec << "] " << info << "\033[0m\n";
-    } else if(VCS_GetErrorInfo(this->errorCode, errorInfo, 1000) == 0) {
+        cout << "\033[1;31m[" << std::hex << errorCode << std::dec << "] " << info << "\033[0m\n";
+    } else if(VCS_GetErrorInfo(errorCode, errorInfo, 1000) == 0) {
         cout << BOLDRED << "Unknown Error" << RESET << endl;
     } else {
-        cout << "\033[1;31m[" << std::hex << this->errorCode << std::dec << "] " << info << ": " << errorInfo << "\033[0m\n";
+        cout << "\033[1;31m[" << std::hex << errorCode << std::dec << "] " << info << ": " << errorInfo << "\033[0m\n";
     }
 }
 
@@ -87,7 +87,7 @@ void epos::MotorController::connect(string deviceName, string protocolName, stri
     /* Open the port to send and receive commands -> successful if != 0 */
 	this->deviceHandle = VCS_OpenDevice(c_deviceName, c_protocolName, c_interfaceName, c_portName, &(this->errorCode));
 
-    delete c_deviceName, c_protocolName, c_interfaceName, c_portName;
+    // delete c_deviceName, c_protocolName, c_interfaceName, c_portName;
 
     if(this->deviceHandle == 0 || this->errorCode != 0) {
         LogError("Connection Error: ", this->errorCode);
@@ -113,7 +113,7 @@ void epos::MotorController::setEnable(unsigned int nodeId) {
 
 
 void epos::MotorController::checkMotorState(unsigned int nodeId) {
-    unsigned int errorCode, lBaudrate, lTimeout;
+    unsigned int lBaudrate, lTimeout;
 
     if(VCS_GetProtocolStackSettings(this->deviceHandle, &lBaudrate, &lTimeout, &(this->errorCode)) == 0) {
         LogError("VCS_GetProtocolStackSettings", this->errorCode);
@@ -183,9 +183,6 @@ void epos::MotorController::activateProfilePositionMode(unsigned int nodeId) {
 }
 
 void epos::MotorController::startMovement(unsigned int nodeId, unsigned int pos, unsigned int relAbs, unsigned int immWait) {
-    int isFault;
-
-
     /* Check if key exists in movement profile map */
     MovementProfile movementProfile = this->getMovementProfile(nodeId);
     

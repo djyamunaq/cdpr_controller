@@ -36,8 +36,10 @@ class UserNode : public rclcpp::Node {
     void timer_callback() {
       auto message = geometry_msgs::msg::Point ();
 
-      std::future<int> futureCounter  = std::async(std::launch::async, getData);
-      std::future_status status = futureCounter.wait_until(std::chrono::system_clock::now() + std::chrono::nanoseconds(100));
+      // std::future<int> futureCounter  = std::async(std::launch::async, getData);
+      // std::future_status status = futureCounter.wait_until(std::chrono::system_clock::now() + std::chrono::nanoseconds(100));
+
+      cin >> x >> y;
 
       if(xPrev != x || yPrev != y) {
         xPrev = x;
