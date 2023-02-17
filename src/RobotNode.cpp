@@ -8,6 +8,8 @@
 #include "std_msgs/msg/int32.hpp"
 #include "geometry_msgs/msg/point.hpp"
 
+#define MAX_DIST 100
+
 using namespace std::chrono_literals;
 using std::cout;
 using std::cin;
@@ -35,7 +37,7 @@ void generateTrajectory() {
 
   // Time range and initial time of movement
   double ti = 0;
-
+  Dt = 10*(pfs - pis).norm()/MAX_DIST;
   trajectory = TrajectoryGenerator(pis, pfs, Dt, ti);
 }
   
@@ -56,15 +58,16 @@ class RobotNode : public rclcpp::Node {
 
   private:
     void topic_callback(const geometry_msgs::msg::Point::SharedPtr msg) const {
-      xPrev = x;
-      yPrev = y;
-      x = msg->x;
-      y = msg->y;
-      
-      generateTrajectory();
+      if(msg->x != x || msg->y != y) {
+        xPrev = x;
+        yPrev = y;
+        x = msg->x;
+        y = msg->y;
+        
+        generateTrajectory();
 
-      moving = true;
-
+        moving = true;
+      }
     }
 
     void timer_callback() {

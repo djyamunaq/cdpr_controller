@@ -14,7 +14,7 @@ RobotModel::RobotModel(Eigen::Vector3d robotPos, Eigen::Vector3d pulleyLeft,  Ei
     this->Lright = this->Lright0;
     this->qRight0 = 0;
     this->qLeft0 = 0;
-    this->coeff = 0.5323;
+    this->coeff = 0.45;
 }        
         
 RobotModel::RobotModel() {}
@@ -35,6 +35,7 @@ void RobotModel::inverseKinematics(Eigen::Vector3d Xd, int &qL, int &qR) {
     qL = Qleft;
     qR = Qright;
 
+    cout << this->coeff << endl;
     cout << this->Lleft << ' ' << this->Lright << endl;
 }
 
